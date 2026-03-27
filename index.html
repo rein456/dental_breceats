@@ -1,0 +1,1975 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="preload"
+            href="./assets/fonts/VelaSans-SemiBold.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link rel="shortcut icon" href="assets/img/favicon.png" />
+        <title>Home Page</title>
+        <script type="module" crossorigin="" src="./js/index.min.js?v=1767010499665"></script>
+        <link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1767010499665" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header data-fls-header="" class="header">
+                <div class="header__container">
+                    <a href="" class="header__logo">
+                        <img src="./assets/img/logo.svg" alt="Beladent" />
+                    </a>
+                    <div class="header__menu menu">
+                        <button type="button" data-fls-menu="" class="menu__icon icon-menu">
+                            <img src="./assets/img/header/burger.svg" alt="Меню" />
+                            <span></span>
+                        </button>
+                        <nav class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" data-fls-scrollto=".services" class="menu__link">Послуги</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" data-fls-scrollto=".ba" class="menu__link">Результати роботи</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" data-fls-scrollto=".team" class="menu__link">Команда</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" data-fls-scrollto=".reviews" class="menu__link">Відгуки</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" data-fls-scrollto=".contacts" class="menu__link">Контакт</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+                    <div data-fls-dynamic=".menu__body, 992" class="header__actions actions-header">
+                        <div class="actions-header__info">
+                            <div class="actions-header__phones">
+                                <a href="tel:+380501090707" class="actions-header__tel">(050) 1090707</a>
+                                <a href="tel:+380931090707" class="actions-header__tel">(093) 1090707</a>
+                                <a href="tel:+380961090707" class="actions-header__tel">(096) 1090707</a>
+                            </div>
+                            <a href="mailto:beladentst@hotmail.com" class="actions-header__email"
+                                >beladentst@hotmail.com</a
+                            >
+                            <div class="actions-header__adress">Київська обл., м. Біла Церква, вул. Млинова, 25</div>
+                        </div>
+                        <div class="actions-header__buttons">
+                            <a target="_blank" href="https://t.me/centrbeladent_bot" class="actions-header__tg">
+                                <img src="./assets/img/tg.svg" alt="Телеграм" />
+                            </a>
+                            <a data-fls-popup-link="popup_call" href="#" class="actions-header__btn"
+                                >Замовити дзвінок</a
+                            >
+                        </div>
+                    </div>
+                    <a href="#" class="header__call">
+                        <img src="./assets/img/call.svg" alt="Замовити дзвінок" />
+                    </a>
+                </div>
+            </header>
+            <main class="page">
+                <section class="page__hero hero">
+                    <div class="hero__container">
+                        <div class="hero__content">
+                            <div class="hero__label">Посмішка без болю</div>
+                            <h1 class="hero__title">
+                                Імплантація зубів без болю — турбота та контроль на кожному кроці
+                            </h1>
+                            <p class="hero__text">MegaGen імпланти, 3D-діагностика, комфорт і гарантія результату.</p>
+                            <a class="hero__btn btn" data-fls-popup-link="popup_call" href="#"
+                                >Записатися на консультацію</a
+                            >
+                            <div class="hero__advantages">
+                                <div class="hero__advantage">
+                                    <img src="./assets/img/hero/01.svg" alt="Icon" />
+                                    <span>Встановлено понад тисячі імплантів</span>
+                                </div>
+                                <div class="hero__advantage">
+                                    <img src="./assets/img/hero/02.svg" alt="Icon" />
+                                    <span>Пожиттєва гарантія</span>
+                                </div>
+                                <div class="hero__advantage">
+                                    <img src="./assets/img/hero/03.svg" alt="Icon" />
+                                    <span>Iмпланти MegaGen</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__img">
+                            <picture>
+                                <source
+                                    media="(max-width: 600px)"
+                                    srcset="./assets/img/hero/main-600.webp"
+                                    type="image/webp"
+                                />
+                                <img alt="Стоматолог" src="./assets/img/hero/main.webp" />
+                            </picture>
+                        </div>
+                    </div>
+                </section>
+                <section class="page__services services">
+                    <div class="services__container">
+                        <h2 class="services__title">Наші послуги з імплантації зубів</h2>
+                        <div data-fls-tabs="" class="services__tabs">
+                            <nav data-fls-tabs-titles="" class="services__navigation">
+                                <button type="button" class="services-nav__title --tab-active">Коронки на зуб</button>
+                                <button type="button" class="services-nav__title">Коронки на імпланти</button>
+                                <button type="button" class="services-nav__title">Ацеталовий протез</button>
+                                <button type="button" class="services-nav__title">Бюгельний протез</button>
+                                <button type="button" class="services-nav__title">Нейлонові протези</button>
+                                <button type="button" class="services-nav__title">Мостовидний протез</button>
+                            </nav>
+                            <div data-fls-tabs-body="" class="services__content">
+                                <div class="services__body">
+                                    <div class="services__wrapper">
+                                        <div class="services__info">
+                                            <div class="services__ico">
+                                                <img src="./assets/img/services/ico/01.svg" alt="Icon" />
+                                            </div>
+                                            <h3 class="services__type">Коронки на зуб</h3>
+                                            <div class="services__desc">
+                                                <p>
+                                                    Коронки на зуб відновлюють форму, функцію та естетику природного
+                                                    зуба. Вони допомагають захистити пошкоджені або ослаблені зуби після
+                                                    лікування карієсу, тріщин або великих пломб. Виготовляються з різних
+                                                    матеріалів, включаючи металокераміку та безметалеву кераміку, що
+                                                    забезпечує довговічність і природний вигляд.
+                                                </p>
+                                            </div>
+                                            <a href="#" data-fls-popup-link="popup_call" class="services__btn btn"
+                                                >Записатися</a
+                                            >
+                                        </div>
+                                        <div class="services__img">
+                                            <picture>
+                                                <img alt="Коронки на зуб" src="./assets/img/services/01.webp" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services__body">
+                                    <div class="services__wrapper">
+                                        <div class="services__info">
+                                            <div class="services__ico">
+                                                <img src="./assets/img/services/ico/01.svg" alt="Icon" />
+                                            </div>
+                                            <h3 class="services__type">Коронки на імпланти</h3>
+                                            <div class="services__desc">
+                                                <p>
+                                                    Коронки на імпланти відновлюють відсутні зуби і встановлюються на
+                                                    штучний імплант замість природного кореня. Вони відтворюють форму та
+                                                    колір природних зубів, забезпечують міцність при жуванні та
+                                                    довговічність. Це оптимальне рішення для тих, хто втратив один або
+                                                    декілька зубів.
+                                                </p>
+                                            </div>
+                                            <a href="#" data-fls-popup-link="popup_call" class="services__btn btn"
+                                                >Записатися</a
+                                            >
+                                        </div>
+                                        <div class="services__img">
+                                            <picture>
+                                                <img alt="Коронки на зуб" src="./assets/img/services/02.webp" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services__body">
+                                    <div class="services__wrapper">
+                                        <div class="services__info">
+                                            <div class="services__ico">
+                                                <img src="./assets/img/services/ico/01.svg" alt="Icon" />
+                                            </div>
+                                            <h3 class="services__type">Ацеталовий протез</h3>
+                                            <div class="services__desc">
+                                                <p>
+                                                    Ацеталовий протез — легкий і гіпоалергенний знімний протез, який
+                                                    відрізняється високою міцністю і естетикою. Він зручний у
+                                                    використанні та не викликає подразнень ясен. Ідеально підходить для
+                                                    пацієнтів, які потребують часткової заміни зубів.
+                                                </p>
+                                            </div>
+                                            <a href="#" data-fls-popup-link="popup_call" class="services__btn btn"
+                                                >Записатися</a
+                                            >
+                                        </div>
+                                        <div class="services__img">
+                                            <picture>
+                                                <img alt="Коронки на зуб" src="./assets/img/services/03.webp" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services__body">
+                                    <div class="services__wrapper">
+                                        <div class="services__info">
+                                            <div class="services__ico">
+                                                <img src="./assets/img/services/ico/01.svg" alt="Icon" />
+                                            </div>
+                                            <h3 class="services__type">Нейлонові протези</h3>
+                                            <div class="services__desc">
+                                                <p>
+                                                    Нейлонові протези виготовляються з гнучкого матеріалу, що повторює
+                                                    форму ясен. Вони легкі, комфортні та не викликають подразнень.
+                                                    Ідеально підходять для пацієнтів з підвищеною чутливістю або для
+                                                    тих, хто шукає естетичне та зручне рішення для часткової або повної
+                                                    заміни зубів.
+                                                </p>
+                                            </div>
+                                            <a href="#" data-fls-popup-link="popup_call" class="services__btn btn"
+                                                >Записатися</a
+                                            >
+                                        </div>
+                                        <div class="services__img">
+                                            <picture>
+                                                <img alt="Коронки на зуб" src="./assets/img/services/04.webp" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services__body">
+                                    <div class="services__wrapper">
+                                        <div class="services__info">
+                                            <div class="services__ico">
+                                                <img src="./assets/img/services/ico/01.svg" alt="Icon" />
+                                            </div>
+                                            <h3 class="services__type">Нейлонові протези</h3>
+                                            <div class="services__desc">
+                                                <p>
+                                                    Нейлонові протези виготовляються з гнучкого матеріалу, що повторює
+                                                    форму ясен. Вони легкі, комфортні та не викликають подразнень.
+                                                    Ідеально підходять для пацієнтів з підвищеною чутливістю або для
+                                                    тих, хто шукає естетичне та зручне рішення для часткової або повної
+                                                    заміни зубів.
+                                                </p>
+                                            </div>
+                                            <a href="#" data-fls-popup-link="popup_call" class="services__btn btn"
+                                                >Записатися</a
+                                            >
+                                        </div>
+                                        <div class="services__img">
+                                            <picture>
+                                                <img alt="Коронки на зуб" src="./assets/img/services/05.webp" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services__body">
+                                    <div class="services__wrapper">
+                                        <div class="services__info">
+                                            <div class="services__ico">
+                                                <img src="./assets/img/services/ico/01.svg" alt="Icon" />
+                                            </div>
+                                            <h3 class="services__type">Мостовидний протез</h3>
+                                            <div class="services__desc">
+                                                <p>
+                                                    Мостовидний протез відновлює один або декілька відсутніх зубів,
+                                                    спираючись на сусідні здорові зуби. Він міцно фіксується та дозволяє
+                                                    відновити жувальну функцію та естетику посмішки. Це класичне та
+                                                    надійне рішення для пацієнтів, які не потребують імплантів.
+                                                </p>
+                                            </div>
+                                            <a href="#" data-fls-popup-link="popup_call" class="services__btn btn"
+                                                >Записатися</a
+                                            >
+                                        </div>
+                                        <div class="services__img">
+                                            <picture>
+                                                <img alt="Коронки на зуб" src="./assets/img/services/06.webp" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-fls-slider="" class="services__slider swiper">
+                            <div class="services__wrapper-slider swiper-wrapper">
+                                <div class="services__slide swiper-slide">
+                                    <div class="services__wrapper">
+                                        <div class="services__info">
+                                            <div class="services__ico">
+                                                <img src="./assets/img/services/ico/01.svg" alt="Icon" />
+                                            </div>
+                                            <h3 class="services__type">Коронки на зуб</h3>
+                                            <div class="services__desc">
+                                                <p>
+                                                    Коронки на зуб відновлюють форму, функцію та естетику природного
+                                                    зуба. Вони допомагають захистити пошкоджені або ослаблені зуби після
+                                                    лікування карієсу, тріщин або великих пломб. Виготовляються з різних
+                                                    матеріалів, включаючи металокераміку та безметалеву кераміку, що
+                                                    забезпечує довговічність і природний вигляд.
+                                                </p>
+                                            </div>
+                                            <a href="#" data-fls-popup-link="popup_call" class="services__btn btn"
+                                                >Записатися</a
+                                            >
+                                        </div>
+                                        <div class="services__img">
+                                            <picture>
+                                                <img alt="Коронки на зуб" src="./assets/img/services/01.webp" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services__slide swiper-slide">
+                                    <div class="services__wrapper">
+                                        <div class="services__info">
+                                            <div class="services__ico">
+                                                <img src="./assets/img/services/ico/01.svg" alt="Icon" />
+                                            </div>
+                                            <h3 class="services__type">Коронки на імпланти</h3>
+                                            <div class="services__desc">
+                                                <p>
+                                                    Коронки на імпланти відновлюють відсутні зуби і встановлюються на
+                                                    штучний імплант замість природного кореня. Вони відтворюють форму та
+                                                    колір природних зубів, забезпечують міцність при жуванні та
+                                                    довговічність. Це оптимальне рішення для тих, хто втратив один або
+                                                    декілька зубів.
+                                                </p>
+                                            </div>
+                                            <a href="#" data-fls-popup-link="popup_call" class="services__btn btn"
+                                                >Записатися</a
+                                            >
+                                        </div>
+                                        <div class="services__img">
+                                            <picture>
+                                                <img alt="Коронки на зуб" src="./assets/img/services/02.webp" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services__slide swiper-slide">
+                                    <div class="services__wrapper">
+                                        <div class="services__info">
+                                            <div class="services__ico">
+                                                <img src="./assets/img/services/ico/01.svg" alt="Icon" />
+                                            </div>
+                                            <h3 class="services__type">Ацеталовий протез</h3>
+                                            <div class="services__desc">
+                                                <p>
+                                                    Ацеталовий протез — легкий і гіпоалергенний знімний протез, який
+                                                    відрізняється високою міцністю і естетикою. Він зручний у
+                                                    використанні та не викликає подразнень ясен. Ідеально підходить для
+                                                    пацієнтів, які потребують часткової заміни зубів.
+                                                </p>
+                                            </div>
+                                            <a href="#" data-fls-popup-link="popup_call" class="services__btn btn"
+                                                >Записатися</a
+                                            >
+                                        </div>
+                                        <div class="services__img">
+                                            <picture>
+                                                <img alt="Коронки на зуб" src="./assets/img/services/03.webp" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services__slide swiper-slide">
+                                    <div class="services__wrapper">
+                                        <div class="services__info">
+                                            <div class="services__ico">
+                                                <img src="./assets/img/services/ico/01.svg" alt="Icon" />
+                                            </div>
+                                            <h3 class="services__type">Нейлонові протези</h3>
+                                            <div class="services__desc">
+                                                <p>
+                                                    Нейлонові протези виготовляються з гнучкого матеріалу, що повторює
+                                                    форму ясен. Вони легкі, комфортні та не викликають подразнень.
+                                                    Ідеально підходять для пацієнтів з підвищеною чутливістю або для
+                                                    тих, хто шукає естетичне та зручне рішення для часткової або повної
+                                                    заміни зубів.
+                                                </p>
+                                            </div>
+                                            <a href="#" data-fls-popup-link="popup_call" class="services__btn btn"
+                                                >Записатися</a
+                                            >
+                                        </div>
+                                        <div class="services__img">
+                                            <picture>
+                                                <img alt="Коронки на зуб" src="./assets/img/services/04.webp" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services__slide swiper-slide">
+                                    <div class="services__wrapper">
+                                        <div class="services__info">
+                                            <div class="services__ico">
+                                                <img src="./assets/img/services/ico/01.svg" alt="Icon" />
+                                            </div>
+                                            <h3 class="services__type">Нейлонові протези</h3>
+                                            <div class="services__desc">
+                                                <p>
+                                                    Нейлонові протези виготовляються з гнучкого матеріалу, що повторює
+                                                    форму ясен. Вони легкі, комфортні та не викликають подразнень.
+                                                    Ідеально підходять для пацієнтів з підвищеною чутливістю або для
+                                                    тих, хто шукає естетичне та зручне рішення для часткової або повної
+                                                    заміни зубів.
+                                                </p>
+                                            </div>
+                                            <a href="#" data-fls-popup-link="popup_call" class="services__btn btn"
+                                                >Записатися</a
+                                            >
+                                        </div>
+                                        <div class="services__img">
+                                            <picture>
+                                                <img alt="Коронки на зуб" src="./assets/img/services/05.webp" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services__slide swiper-slide">
+                                    <div class="services__wrapper">
+                                        <div class="services__info">
+                                            <div class="services__ico">
+                                                <img src="./assets/img/services/ico/01.svg" alt="Icon" />
+                                            </div>
+                                            <h3 class="services__type">Мостовидний протез</h3>
+                                            <div class="services__desc">
+                                                <p>
+                                                    Мостовидний протез відновлює один або декілька відсутніх зубів,
+                                                    спираючись на сусідні здорові зуби. Він міцно фіксується та дозволяє
+                                                    відновити жувальну функцію та естетику посмішки. Це класичне та
+                                                    надійне рішення для пацієнтів, які не потребують імплантів.
+                                                </p>
+                                            </div>
+                                            <a href="#" data-fls-popup-link="popup_call" class="services__btn btn"
+                                                >Записатися</a
+                                            >
+                                        </div>
+                                        <div class="services__img">
+                                            <picture>
+                                                <img alt="Коронки на зуб" src="./assets/img/services/06.webp" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__btns">
+                                <button type="button" class="services-swiper-button-prev">
+                                    <img src="./assets/img/slider_arr.svg" alt="Назад" />
+                                </button>
+                                <div class="services__counter" data-counter="">1/6</div>
+                                <button type="button" class="services-swiper-button-next">
+                                    <img src="./assets/img/slider_arr.svg" alt="Вперед" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page__what what">
+                    <div class="what__container">
+                        <div class="what__img">
+                            <picture>
+                                <img alt="Лікар" src="./assets/img/what/what.webp" />
+                            </picture>
+                        </div>
+                        <div class="what__content">
+                            <div class="what__video">
+                                <iframe
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/2dhUnqbD9gw?si=9CkrYtJgLxpY3M6o"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                            <h2 class="what__title">Що таке імплантація?</h2>
+                            <div class="what__text">
+                                <p>
+                                    Це процес відновлення втраченого зуба шляхом встановлення титанової “основи” —
+                                    імпланта — у кісткову тканину. На нього кріпиться абатмент та коронка, яка виглядає
+                                    й функціонує як справжній зуб.
+                                </p>
+                                <p>
+                                    У BELADENT ми також проводимо імплантацію в медичному сні — це особлива перевага
+                                    нашої клініки. Ми єдина приватна стоматологія в Білій Церкві, яка має дозвіл на
+                                    застосування седації. Тому ви не відчуєте ані страху, ані болю.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page__features features">
+                    <div class="features__container">
+                        <h2 class="features__title">Переваги імплантатів MegaGen</h2>
+                        <div class="features__wrapper">
+                            <div class="features__content">
+                                <div class="features__desc">
+                                    Імплантати MegaGen — це високотехнологічна система імплантації, яку обирають
+                                    стоматологи у всьому світі завдяки її надійності, біосумісності та швидкій адаптації
+                                    в кістці. Це один із найкращих варіантів для тих, хто хоче отримати красиву усмішку
+                                    та міцні «нові» зуби на довгі роки. Завдяки особливій формі й різьбі MegaGen можна
+                                    встановити там, де інші системи не підходять без додаткових втручань.
+                                </div>
+                                <div class="features__row">
+                                    <div class="features__item">
+                                        <div class="features__punct">
+                                            <div class="features__num">1</div>
+                                            <span>Висока приживлюваність та швидка остеоінтеграція</span>
+                                        </div>
+                                        <div class="features__text">
+                                            Спеціальне покриття імплантату забезпечує швидке та надійне з’єднання з
+                                            кісткою. Це пришвидшує процес відновлення та дає можливість ставити
+                                            тимчасові зуби вже через кілька днів.
+                                        </div>
+                                    </div>
+                                    <div class="features__item">
+                                        <div class="features__punct">
+                                            <div class="features__num">2</div>
+                                            <span>Максимальна стабільність одразу після встановлення</span>
+                                        </div>
+                                        <div class="features__text">
+                                            Конструкція MegaGen дозволяє досягнути високої первинної фіксації. Це
+                                            особливо важливо при протоколах з негайним навантаженням, коли пацієнт
+                                            отримує нову усмішку в максимально короткі терміни.
+                                        </div>
+                                    </div>
+                                    <div class="features__item">
+                                        <div class="features__punct">
+                                            <div class="features__num">3</div>
+                                            <span>Біосумісний титановий сплав</span>
+                                        </div>
+                                        <div class="features__text">
+                                            Імплантати виготовлені з високоякісного титану, який повністю сумісний із
+                                            тканинами організму та не викликає алергічних реакцій.
+                                        </div>
+                                    </div>
+                                    <div class="features__item">
+                                        <div class="features__punct">
+                                            <div class="features__num">4</div>
+                                            <span>Мінімальна травматичність процедури</span>
+                                        </div>
+                                        <div class="features__text">
+                                            Технологічна форма імплантату дозволяє встановлювати його навіть у складних
+                                            випадках, заощаджуючи кісткову тканину та зменшуючи період відновлення.
+                                        </div>
+                                    </div>
+                                    <div class="features__item">
+                                        <div class="features__punct">
+                                            <div class="features__num">5</div>
+                                            <span>Довготривалий результат</span>
+                                        </div>
+                                        <div class="features__text">
+                                            MegaGen — це система з доказаною ефективністю та високими світовими
+                                            показниками успішності. За правильного догляду імплант може служити 10–20
+                                            років і більше.
+                                        </div>
+                                    </div>
+                                    <div class="features__item">
+                                        <div class="features__punct">
+                                            <div class="features__num">6</div>
+                                            <span>Підходять навіть при обмеженому об’ємі кістки</span>
+                                        </div>
+                                        <div class="features__text">
+                                            Завдяки особливій формі й різьбі MegaGen можна встановити там, де інші
+                                            системи не підходять без додаткових втручань.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-fls-dynamic=".features__row, 991.92, 3" class="features__img">
+                                <picture>
+                                    <img alt="Імпланти" src="./assets/img/features/image.webp" />
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pahe__how how">
+                    <div class="how__container">
+                        <h2 class="how__title">Як відбувається процедура?</h2>
+                        <div class="how__text">Результат — стабільний імплант і підготовка до повноцінного зуба</div>
+                        <div class="how__content">
+                            <div class="how__row">
+                                <div class="how__item">
+                                    <div class="how__num">1</div>
+                                    <div class="how__desc">Консультація лікаря - хірурга-імплантолога</div>
+                                </div>
+                                <div class="how__item">
+                                    <div class="how__num">2</div>
+                                    <div class="how__desc">КТ та діагностика</div>
+                                </div>
+                                <div class="how__item how_non">
+                                    <div class="how__num">3</div>
+                                    <div class="how__desc">
+                                        Спільний план лікування з лікарем -стоматологом - ортопедом
+                                    </div>
+                                </div>
+                                <div class="how__item">
+                                    <div class="how__num">4</div>
+                                    <div class="how__desc">Встановлення імплантата</div>
+                                </div>
+                                <div class="how__item">
+                                    <div class="how__num">5</div>
+                                    <div class="how__desc">Період загоєння</div>
+                                </div>
+                                <div class="how__item how_non">
+                                    <div class="how__num">6</div>
+                                    <div class="how__desc">Протезування у ортопеда</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page__implants implants">
+                    <div class="implants__container">
+                        <div class="implants__content">
+                            <h2 class="implants__title">Імплантація уві сні — комфортно, безпечно, без стресу</h2>
+                            <div class="implants__text">
+                                У стоматологічному центрі BELADENT ми виконуємо імплантацію зубів у медикаментозному
+                                сні. Це рішення дозволяє провести втручання без болю, страху та дискомфорту. Пацієнт
+                                просто засинає — і прокидається з уже встановленими імплантами.
+                            </div>
+                            <div class="implants__when">Коли рекомендується лікування уві сні?</div>
+                            <div class="implants__row">
+                                <div class="implants__item">
+                                    <span>Тим, хто має сильний страх перед стоматологом</span>
+                                </div>
+                                <div class="implants__item">
+                                    <span>Людям з підвищеним блювотним рефлексом</span>
+                                </div>
+                                <div class="implants__item">
+                                    <span>Пацієнтам після травматичного стоматологічного досвіду</span>
+                                </div>
+                                <div class="implants__item">
+                                    <span>Тим, хто потребує великого обсягу роботи за одне відвідування</span>
+                                </div>
+                                <div class="implants__item">
+                                    <span>Людям із високою чутливістю до болю або тривожністю</span>
+                                </div>
+                                <div class="implants__item">
+                                    <span>Пацієнтам з особливими потребами (за показаннями лікаря)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="implants__img">
+                            <picture>
+                                <img alt="Імплантація" src="./assets/img/implants/implants.webp" />
+                            </picture>
+                        </div>
+                    </div>
+                </section>
+                <section class="page__team team">
+                    <div class="team__container">
+                        <h2 class="team__title">Наша команда</h2>
+                        <div data-fls-slider="" class="team__slider swiper">
+                            <div class="team__wrapper swiper-wrapper">
+                                <div class="team__slide swiper-slide">
+                                    <picture>
+                                        <img alt="Володченко Тарас Андрійович" src="./assets/img/team/01.webp" />
+                                    </picture>
+                                    <div class="team__info">
+                                        <div class="team__name">Володченко Тарас Андрійович</div>
+                                        <div class="team__role">Лікар-стоматолог-хірург</div>
+                                        <div class="team__tex">
+                                            Мій підхід — це відповідальність, точна діагностика, професіоналізм і
+                                            впевненість у результаті.
+                                        </div>
+                                        <a data-fls-popup-link="popup_doc_1" href="#" class="team__btn">Про лікаря</a>
+                                    </div>
+                                </div>
+                                <div class="team__slide swiper-slide">
+                                    <picture>
+                                        <img alt="Іванюк Владислав Леонідович" src="./assets/img/team/02.webp" />
+                                    </picture>
+                                    <div class="team__info">
+                                        <div class="team__name">Іванюк Владислав Леонідович</div>
+                                        <div class="team__role">Лікар-хірург-імплантолог</div>
+                                        <div class="team__tex">
+                                            Я переконаний: навіть найскладніші клінічні випадки можна вирішити
+                                            максимально комфортно для пацієнта, якщо поєднати сучасні технології,
+                                            точність і людяність.
+                                        </div>
+                                        <a href="#" data-fls-popup-link="popup_doc_2" class="team__btn">Про лікаря</a>
+                                    </div>
+                                </div>
+                                <div class="team__slide swiper-slide">
+                                    <picture>
+                                        <img alt="Поліщук Олександр Олександрович" src="./assets/img/team/03.webp" />
+                                    </picture>
+                                    <div class="team__info">
+                                        <div class="team__name">Поліщук Олександр Олександрович</div>
+                                        <div class="team__role">Лікар-стоматолог-ортопед</div>
+                                        <div class="team__tex">
+                                            Я щиро вірю, що якісна ортопедична стоматологія — це про турботу, довіру та
+                                            результати, які змінюють життя.
+                                        </div>
+                                        <a href="#" data-fls-popup-link="popup_doc_3" class="team__btn">Про лікаря</a>
+                                    </div>
+                                </div>
+                                <div class="team__slide swiper-slide">
+                                    <picture>
+                                        <img alt="Прохорчук Вадим Леонідович" src="./assets/img/team/04.webp" />
+                                    </picture>
+                                    <div class="team__info">
+                                        <div class="team__name">Прохорчук Вадим Леонідович</div>
+                                        <div class="team__role">Лікар-ортопед</div>
+                                        <div class="team__tex">
+                                            Я переконаний, що найкращий результат — це поєднання знань, досвіду,
+                                            точності та щирого бажання допомогти.
+                                        </div>
+                                        <a href="#" data-fls-popup-link="popup_doc_4" class="team__btn">Про лікаря</a>
+                                    </div>
+                                </div>
+                                <div class="team__slide swiper-slide">
+                                    <picture>
+                                        <source
+                                            media="(max-width: 600px)"
+                                            srcset="./assets/img/team/05-600.webp"
+                                            type="image/webp"
+                                        />
+                                        <img alt="Грега Вадим Валерійович" src="./assets/img/team/05.webp" />
+                                    </picture>
+                                    <div class="team__info">
+                                        <div class="team__name">Грега Вадим Валерійович</div>
+                                        <div class="team__role">Лікар-стоматолог-ортопед</div>
+                                        <div class="team__tex">
+                                            У своїй роботі найбільше ціную можливість повернути людині не лише втрачені
+                                            зуби, а й щиру усмішку та впевненість у собі.
+                                        </div>
+                                        <a data-fls-popup-link="popup_doc_5" href="#" class="team__btn">Про лікаря</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team__btns">
+                                <button type="button" class="team-swiper-button-prev">
+                                    <img src="./assets/img/slider_arr.svg" alt="Назад" />
+                                </button>
+                                <div class="team__counter" data-counter="">1/5</div>
+                                <button type="button" class="team-swiper-button-next">
+                                    <img src="./assets/img/slider_arr.svg" alt="Вперед" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page__why why">
+                    <div class="why__container">
+                        <h2 class="why__title">Чому обрають нас?</h2>
+                        <div class="why__row">
+                            <div class="why__left">
+                                <div class="why__item">
+                                    <div class="why__label">
+                                        <img src="./assets/img/why/01.svg" alt="Icon" />
+                                        <span>Інноваційне обладнання</span>
+                                    </div>
+                                    <div class="why__text">
+                                        Клініка використовує новітні технології, які підвищують точність, швидкість і
+                                        якість лікування.
+                                    </div>
+                                </div>
+                                <div class="why__item">
+                                    <div class="why__label">
+                                        <img src="./assets/img/why/02.svg" alt="Icon" />
+                                        <span>3D-діагностика та цифровий сканер</span>
+                                    </div>
+                                    <div class="why__text">
+                                        Сучасні технології дозволяють точно планувати імплантацію та забезпечувати
+                                        передбачуваний результат.
+                                    </div>
+                                </div>
+                                <div class="why__item">
+                                    <div class="why__label">
+                                        <img src="./assets/img/why/03.svg" alt="Icon" />
+                                        <span>Ваш стоматолог – професіонал</span>
+                                    </div>
+                                    <div class="why__text">
+                                        В BELADENT працюють лікарі з великим практичним досвідом, які постійно
+                                        вдосконалюють свої навички.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="why__img">
+                                <picture>
+                                    <img alt="Стоматологи" src="./assets/img/why/why.webp" />
+                                </picture>
+                            </div>
+                            <div class="why__right">
+                                <div class="why__item">
+                                    <div class="why__label">
+                                        <img src="./assets/img/why/04.svg" alt="Icon" />
+                                        <span>Лікування у медичному сні</span>
+                                    </div>
+                                    <div class="why__text">
+                                        Процедура проходить комфортно та без стресу, пацієнт не відчуває болю чи
+                                        дискомфорту.
+                                    </div>
+                                </div>
+                                <div class="why__item">
+                                    <div class="why__label">
+                                        <img src="./assets/img/why/05.svg" alt="Icon" />
+                                        <span>Абсолютна стерильність</span>
+                                    </div>
+                                    <div class="why__text">
+                                        Усі етапи лікування проходять у безпечних умовах із дотриманням найвищих
+                                        стандартів чистоти.
+                                    </div>
+                                </div>
+                                <div class="why__item">
+                                    <div class="why__label">
+                                        <img src="./assets/img/why/06.svg" alt="Icon" />
+                                        <span>Сімейна стоматологія для всіх</span>
+                                    </div>
+                                    <div class="why__text">
+                                        У клініці BELADENT створені комфортні умови для лікування всієї родини: від
+                                        дітей до дорослих.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page__ba ba">
+                    <div class="ba__container">
+                        <h2 class="ba__title">До та після наших пацієнтів</h2>
+                        <div data-fls-slider="" class="ba__slider swiper">
+                            <div class="ba__wrapper swiper-wrapper">
+                                <div class="ba__slide swiper-slide">
+                                    <div data-fls-beforeafter="" class="ba__before-after before-after">
+                                        <div data-fls-beforeafter-before="" class="before-after__item">
+                                            <picture>
+                                                <source
+                                                    media="(max-width: 600px)"
+                                                    srcset="./assets/img/ba/01/before-600.webp"
+                                                    type="image/webp"
+                                                />
+                                                <source
+                                                    media="(max-width: 1200px)"
+                                                    srcset="./assets/img/ba/01/before-1200.webp"
+                                                    type="image/webp"
+                                                />
+                                                <img alt="До" src="./assets/img/ba/01/before.webp" />
+                                            </picture>
+                                        </div>
+                                        <div data-fls-beforeafter-after="" class="before-after__item">
+                                            <picture>
+                                                <source
+                                                    media="(max-width: 600px)"
+                                                    srcset="./assets/img/ba/01/after-600.webp"
+                                                    type="image/webp"
+                                                />
+                                                <source
+                                                    media="(max-width: 1200px)"
+                                                    srcset="./assets/img/ba/01/after-1200.webp"
+                                                    type="image/webp"
+                                                />
+                                                <img alt="Пісдя" src="./assets/img/ba/01/after.webp" />
+                                            </picture>
+                                        </div>
+                                        <div data-fls-beforeafter-arrow="" class="before-after__arrow">
+                                            <img src="./assets/img/ba/arr.svg" alt="Image" />
+                                        </div>
+                                    </div>
+                                    <div class="ba__content">
+                                        <div class="ba__paragraph">
+                                            <h3 class="ba__label">Проблематика:</h3>
+                                            <div class="ba__text">
+                                                <p>
+                                                    Часткова втрата зубів, неестетичні старі конструкції та необхідність
+                                                    комплексного відновлення.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ba__paragraph">
+                                            <h3 class="ba__label">Рішення:</h3>
+                                            <div class="ba__text">
+                                                <p>
+                                                    Відсутність зубів на верхній щелепі та необхідність фіксації протезу
+                                                    на імплантах. Цирконієвий мостовидний протез на імплантах.
+                                                    Комплексне протезування з опорою на імплантах виконали:
+                                                </p>
+                                                <ul>
+                                                    <li>лікар-хірург Іванюк В.Л.</li>
+                                                    <li>лікар-ортопед Поліщук О.О.</li>
+                                                </ul>
+                                                <p>
+                                                    Було встановлено 6 імплантів Megagen, що забезпечили надійну основу
+                                                    для фіксації незнімного цирконієвого мостовидного протезу. Такий
+                                                    підхід дозволив відновити цілісність зубного ряду, жувальну функцію
+                                                    та естетику усмішки.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ba__paragraph">
+                                            <h3 class="ba__label">Результат:</h3>
+                                            <div class="ba__text">
+                                                Результат: стабільна конструкція, висока естетика та повноцінна
+                                                функціональність — без відчуття протезу в повсякденному житті
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ba__slide swiper-slide">
+                                    <div data-fls-beforeafter="" class="ba__before-after before-after">
+                                        <div data-fls-beforeafter-before="" class="before-after__item">
+                                            <picture>
+                                                <source
+                                                    media="(max-width: 600px)"
+                                                    srcset="./assets/img/ba/02/before-600.webp"
+                                                    type="image/webp"
+                                                />
+                                                <source
+                                                    media="(max-width: 1200px)"
+                                                    srcset="./assets/img/ba/02/before-1200.webp"
+                                                    type="image/webp"
+                                                />
+                                                <img alt="До" src="./assets/img/ba/02/before.webp" />
+                                            </picture>
+                                        </div>
+                                        <div data-fls-beforeafter-after="" class="before-after__item">
+                                            <picture>
+                                                <source
+                                                    media="(max-width: 600px)"
+                                                    srcset="./assets/img/ba/02/after-600.webp"
+                                                    type="image/webp"
+                                                />
+                                                <source
+                                                    media="(max-width: 1200px)"
+                                                    srcset="./assets/img/ba/02/after-1200.webp"
+                                                    type="image/webp"
+                                                />
+                                                <img alt="Пісдя" src="./assets/img/ba/02/after.webp" />
+                                            </picture>
+                                        </div>
+                                        <div data-fls-beforeafter-arrow="" class="before-after__arrow">
+                                            <img src="./assets/img/ba/arr.svg" alt="Image" />
+                                        </div>
+                                    </div>
+                                    <div class="ba__content">
+                                        <div class="ba__paragraph">
+                                            <h3 class="ba__label">Проблематика:</h3>
+                                            <div class="ba__text">
+                                                <p>Коронки з діоксиду цирконію (повна анатомія)</p>
+                                            </div>
+                                        </div>
+                                        <div class="ba__paragraph">
+                                            <h3 class="ba__label">Рішення:</h3>
+                                            <div class="ba__text">
+                                                <p>Коронки з діоксиду цирконію (повна анатомія)</p>
+                                                <ul>
+                                                    <li>Імплантацію провів лікар-стоматолог-хірург Іванюк В.Л.</li>
+                                                    <li>Протезування – лікар-стоматолог-ортопед Грега В.В.</li>
+                                                </ul>
+                                                <p>
+                                                    На встановлені імпланти було виготовлено коронки з діоксиду цирконію
+                                                    з повною анатомічною формою, які точно відтворюють природний рельєф
+                                                    зубів. Завдяки високій міцності цирконію, точному приляганню та
+                                                    детальному моделюванню, пацієнт отримав стабільний функціональний
+                                                    результат і природну естетику усмішки.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ba__paragraph">
+                                            <h3 class="ba__label">Результат:</h3>
+                                            <div class="ba__text">
+                                                Результат: довговічне протезування, комфорт під час жування та
+                                                гармонійний зовнішній вигляд.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ba__slide swiper-slide">
+                                    <div data-fls-beforeafter="" class="ba__before-after before-after">
+                                        <div data-fls-beforeafter-before="" class="before-after__item">
+                                            <picture>
+                                                <source
+                                                    media="(max-width: 600px)"
+                                                    srcset="./assets/img/ba/03/before-600.webp"
+                                                    type="image/webp"
+                                                />
+                                                <source
+                                                    media="(max-width: 1200px)"
+                                                    srcset="./assets/img/ba/03/before-1200.webp"
+                                                    type="image/webp"
+                                                />
+                                                <img alt="До" src="./assets/img/ba/03/before.webp" />
+                                            </picture>
+                                        </div>
+                                        <div data-fls-beforeafter-after="" class="before-after__item">
+                                            <picture>
+                                                <source
+                                                    media="(max-width: 600px)"
+                                                    srcset="./assets/img/ba/03/after-600.webp"
+                                                    type="image/webp"
+                                                />
+                                                <source
+                                                    media="(max-width: 1200px)"
+                                                    srcset="./assets/img/ba/03/after-1200.webp"
+                                                    type="image/webp"
+                                                />
+                                                <img alt="Пісдя" src="./assets/img/ba/03/after.webp" />
+                                            </picture>
+                                        </div>
+                                        <div data-fls-beforeafter-arrow="" class="before-after__arrow">
+                                            <img src="./assets/img/ba/arr.svg" alt="Image" />
+                                        </div>
+                                    </div>
+                                    <div class="ba__content">
+                                        <div class="ba__paragraph">
+                                            <h3 class="ba__label">Проблематика:</h3>
+                                            <div class="ba__text">
+                                                <p>
+                                                    Пацієнт звернувся зі значним естетичним та функціональним порушенням
+                                                    зубного ряду — наявна стертість, зміна кольору емалі, порушення
+                                                    прикусу.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ba__paragraph">
+                                            <h3 class="ba__label">Рішення:</h3>
+                                            <div class="ba__text">
+                                                <p>Повна реабілітація зубного ряду</p>
+                                                <p>Комплексне лікування виконано двома спеціалістами:</p>
+                                                <ul>
+                                                    <li>
+                                                        Хірургічний етап — лікар-стоматолог-хірург Іванюк Владислав
+                                                        Леонідович
+                                                    </li>
+                                                    <li>Ортопедичний етап — лікар-стоматолог Прохорчук В.Л.</li>
+                                                </ul>
+                                                <p>
+                                                    Після встановлення імплантатів було виготовлено анатомічні коронки з
+                                                    діоксиду цирконію, які забезпечили природний вигляд, точність
+                                                    прилягання та відновлення жувальної функції.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ba__paragraph">
+                                            <h3 class="ba__label">Результат:</h3>
+                                            <div class="ba__text">
+                                                Результат: гармонійна, біла усмішка, ідеальна форма та комфорт у
+                                                повсякденному житті
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ba__btns">
+                                <button type="button" class="ba-swiper-button-prev">
+                                    <img src="./assets/img/slider_arr.svg" alt="Назад" />
+                                </button>
+                                <div class="ba__counter" data-counter="">1/8</div>
+                                <button type="button" class="ba-swiper-button-next">
+                                    <img src="./assets/img/slider_arr.svg" alt="Вперед" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page__reviews reviews">
+                    <div class="reviews__container">
+                        <h2 class="reviews__title">Що кажуть наші пацієнти</h2>
+                        <div data-fls-slider="" class="reviews__slider swiper">
+                            <div class="reviews__wrapper swiper-wrapper">
+                                <div class="reviews__slide swiper-slide">
+                                    <div class="reviews__info">
+                                        <div class="reviews__name">Инна Кучеренко</div>
+                                        <div class="reviews__mark">
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                        </div>
+                                    </div>
+                                    <div class="reviews__date">5 місяців тому</div>
+                                    <div class="reviews__text">
+                                        Дуже вражена відношенням до пацієнта з самого початку звернення
+                                        до цього закладу. Приємне спілкування, нагадування про визит. Лікарі уважні та
+                                        високопрофесійні. Поради, рекомендації та план лікування, спостереження.
+                                        Відчуття, що прийшов до знайомих чи друзів. Дуже вдячна.
+                                    </div>
+                                </div>
+                                <div class="reviews__slide swiper-slide">
+                                    <div class="reviews__info">
+                                        <div class="reviews__name">Мирослава П</div>
+                                        <div class="reviews__mark">
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                        </div>
+                                    </div>
+                                    <div class="reviews__date">4 місяця тому</div>
+                                    <div class="reviews__text">
+                                        Моя щира рекондація клініки Беладент та лікаря Іванюка Владислава Леонідивача,
+                                        дуже доброзичливий персонал (а саме, приємні пані, які сидять на рецепції), які
+                                        знайшли підхід до найвибагливіших клієнтів та йдуть на зустріч потребам
+                                        клієнтів. Владислав Леонідович професіонал своєї справи, чемний, добродушний та
+                                        водночас впевнений у своїх діях хірург, також його асистент привітна та гарний
+                                        помічник.
+                                    </div>
+                                </div>
+                                <div class="reviews__slide swiper-slide">
+                                    <div class="reviews__info">
+                                        <div class="reviews__name">Emilia Chernukhina</div>
+                                        <div class="reviews__mark">
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                        </div>
+                                    </div>
+                                    <div class="reviews__date">Тиждень тому</div>
+                                    <div class="reviews__text">
+                                        Моя щира рекондація клініки Беладент та лікаря Іванюка Владислава Леонідивача,
+                                        дуже доброзичливий персонал (а саме, приємні пані, які сидять на рецепції), які
+                                        знайшли підхід до найвибагливіших клієнтів та йдуть на зустріч потребам
+                                        клієнтів. Владислав Леонідович професіонал своєї справи, чемний, добродушний та
+                                        водночас впевнений у своїх діях хірург, також його асистент привітна та гарний
+                                        помічник.
+                                    </div>
+                                </div>
+                                <div class="reviews__slide swiper-slide">
+                                    <div class="reviews__info">
+                                        <div class="reviews__name">Єлизавета Сімак</div>
+                                        <div class="reviews__mark">
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                        </div>
+                                    </div>
+                                    <div class="reviews__date">Тиждень тому</div>
+                                    <div class="reviews__text">
+                                        Хочу щиро подякувати клініці «Беладент» та лікарю Крижанівському Олегу
+                                        Станіславовичу за людяність і професіоналізм. Я є переселенкою і, на жаль, маю
+                                        обмежені фінансові можливості. Коли звернулася до клініки, мені провели
+                                        безкоштовну консультацію, а оплатити потрібно було лише рентген. Також приємно
+                                        здивувало, що зробили знижку як для переселенки.
+                                    </div>
+                                </div>
+                                <div class="reviews__slide swiper-slide">
+                                    <div class="reviews__info">
+                                        <div class="reviews__name">Margarita Nimerovska</div>
+                                        <div class="reviews__mark">
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                        </div>
+                                    </div>
+                                    <div class="reviews__date">Місяць тому</div>
+                                    <div class="reviews__text">
+                                        Прекрасний центр — уважні лікарі, приємна атмосфера, сучасне обладнання.
+                                        Найкраще місце для тих, хто цінує якість і доброзичливість.
+                                    </div>
+                                </div>
+                                <div class="reviews__slide swiper-slide">
+                                    <div class="reviews__info">
+                                        <div class="reviews__name">Elizavetka Kutova</div>
+                                        <div class="reviews__mark">
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                            <img src="./assets/img/reviews/star.svg" alt="*" />
+                                        </div>
+                                    </div>
+                                    <div class="reviews__date">Місяць тому</div>
+                                    <div class="reviews__text">
+                                        Дуже сподобався медичний центр «Беладент»! Професійні лікарі, уважне ставлення
+                                        та приємна атмосфера. Рекомендую!☺️
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews__btns">
+                                <button type="button" class="reviews-swiper-button-prev">
+                                    <img src="./assets/img/slider_arr.svg" alt="Назад" />
+                                </button>
+                                <div class="reviews__counter" data-counter="">1/8</div>
+                                <button type="button" class="reviews-swiper-button-next">
+                                    <img src="./assets/img/slider_arr.svg" alt="Вперед" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page__process process">
+                    <div class="process__container">
+                        <h2 class="process__title">Ми в процесі роботи</h2>
+                        <div data-fls-slider="" class="process__slider swiper">
+                            <div class="process__wrapper swiper-wrapper">
+                                <div class="process__slide swiper-slide">
+                                    <picture>
+                                        <source
+                                            media="(max-width: 600px)"
+                                            srcset="./assets/img/process/01-600.webp"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(max-width: 1200px)"
+                                            srcset="./assets/img/process/01-1200.webp"
+                                            type="image/webp"
+                                        />
+                                        <img alt="Стоматолог" src="./assets/img/process/01.webp" />
+                                    </picture>
+                                </div>
+                                <div class="process__slide swiper-slide">
+                                    <picture>
+                                        <source
+                                            media="(max-width: 600px)"
+                                            srcset="./assets/img/process/02-600.webp"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(max-width: 1200px)"
+                                            srcset="./assets/img/process/02-1200.webp"
+                                            type="image/webp"
+                                        />
+                                        <img alt="Стоматолог" src="./assets/img/process/02.webp" />
+                                    </picture>
+                                </div>
+                                <div class="process__slide swiper-slide">
+                                    <picture>
+                                        <source
+                                            media="(max-width: 600px)"
+                                            srcset="./assets/img/process/03-600.webp"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(max-width: 1200px)"
+                                            srcset="./assets/img/process/03-1200.webp"
+                                            type="image/webp"
+                                        />
+                                        <img alt="Стоматолог" src="./assets/img/process/03.webp" />
+                                    </picture>
+                                </div>
+                                <div class="process__slide swiper-slide">
+                                    <picture>
+                                        <source
+                                            media="(max-width: 600px)"
+                                            srcset="./assets/img/process/04-600.webp"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(max-width: 1200px)"
+                                            srcset="./assets/img/process/04-1200.webp"
+                                            type="image/webp"
+                                        />
+                                        <img alt="Стоматолог" src="./assets/img/process/04.webp" />
+                                    </picture>
+                                </div>
+                                <div class="process__slide swiper-slide">
+                                    <picture>
+                                        <source
+                                            media="(max-width: 600px)"
+                                            srcset="./assets/img/process/05-600.webp"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(max-width: 1200px)"
+                                            srcset="./assets/img/process/05-1200.webp"
+                                            type="image/webp"
+                                        />
+                                        <img alt="Стоматолог" src="./assets/img/process/05.webp" />
+                                    </picture>
+                                </div>
+                                <div class="process__slide swiper-slide">
+                                    <picture>
+                                        <source
+                                            media="(max-width: 600px)"
+                                            srcset="./assets/img/process/06-600.webp"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(max-width: 1200px)"
+                                            srcset="./assets/img/process/06-1200.webp"
+                                            type="image/webp"
+                                        />
+                                        <img alt="Стоматолог" src="./assets/img/process/06.webp" />
+                                    </picture>
+                                </div>
+                                <div class="process__slide swiper-slide">
+                                    <picture>
+                                        <source
+                                            media="(max-width: 600px)"
+                                            srcset="./assets/img/process/07-600.webp"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(max-width: 1200px)"
+                                            srcset="./assets/img/process/07-1200.webp"
+                                            type="image/webp"
+                                        />
+                                        <img alt="Стоматолог" src="./assets/img/process/07.webp" />
+                                    </picture>
+                                </div>
+                                <div class="process__slide swiper-slide">
+                                    <picture>
+                                        <source
+                                            media="(max-width: 600px)"
+                                            srcset="./assets/img/process/08-600.webp"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(max-width: 1200px)"
+                                            srcset="./assets/img/process/08-1200.webp"
+                                            type="image/webp"
+                                        />
+                                        <img alt="Стоматолог" src="./assets/img/process/08.webp" />
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="process__btns">
+                                <button type="button" class="process-swiper-button-prev">
+                                    <img src="./assets/img/slider_arr.svg" alt="Назад" />
+                                </button>
+                                <div class="process__counter" data-counter="">1/8</div>
+                                <button type="button" class="process-swiper-button-next">
+                                    <img src="./assets/img/slider_arr.svg" alt="Вперед" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page__contacts contacts">
+                    <div class="contacts__container">
+                        <div class="contacts__caption">Контакти</div>
+                        <h2 class="contacts__title">Почніть свій шлях до ідеальної посмішки разом з нами.</h2>
+                        <div class="contacts__wrapper">
+                            <div class="contacts__interactive">
+                                <div class="contacts__content">
+                                    <h3 class="contacts__label">Заповніть форму</h3>
+                                    <div data-fls-dynamic=".form-contacts, 991.91, 4" class="contacts__img">
+                                        <picture>
+                                            <img alt="Лікарі" src="./assets/img/contacts/contacts.webp" />
+                                        </picture>
+                                    </div>
+                                </div>
+                                <form action="sendmail.php" method="post" class="contacts__form form-contacts">
+                                    <div class="form-contacts__item">
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            required
+                                            placeholder="Ім‘я та прізвище"
+                                            class="form-contacts__input"
+                                        />
+                                    </div>
+                                    <div class="form-contacts__item">
+                                        <input
+                                            type="tel"
+                                            name="tel"
+                                            required
+                                            min="10"
+                                            max="10"
+                                            placeholder="Номер телефону"
+                                            class="form-contacts__input"
+                                        />
+                                    </div>
+                                    <div class="form-contacts__item">
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            required
+                                            placeholder="Email"
+                                            class="form-contacts__input"
+                                        />
+                                    </div>
+                                    <div class="form-contacts__item">
+                                        <button type="submit" class="form-contacts__button">
+                                            Записатись на прийом
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="contacts__contacts">
+                                <div class="contacts__row">
+                                    <h3 class="contacts__heading">Контакти</h3>
+                                    <picture>
+                                        <img alt="Стрілка" src="./assets/img/contacts/arr.webp" />
+                                    </picture>
+                                </div>
+                                <div class="contacts__phones">
+                                    <a href="tel:+380501090707" class="contacts__tel">(050) 1090707</a>
+                                    <a href="tel:+380961090707" class="contacts__tel">(096) 1090707</a>
+                                    <a href="tel:+380931090707" class="contacts__tel">(093) 1090707</a>
+                                </div>
+                                <a href="mailto:beladentstomat@gmail.com" class="contacts__email"
+                                    >beladentstomat@gmail.com</a
+                                >
+                                <div class="contacts__social">
+                                    <div class="contacts__adress">Київська обл., м. Біла Церква, вул. Млинова, 25</div>
+                                    <div class="contacts__links">
+                                        <a
+                                            target="_blank"
+                                            href="https://www.instagram.com/beladent.com.ua/"
+                                            class="contacts__link"
+                                        >
+                                            <img src="./assets/img/contacts/inst.svg" alt="Інстраграм" />
+                                        </a>
+                                        <a target="_blank" href="https://t.me/centrbeladent_bot" class="contacts__link">
+                                            <img src="./assets/img/contacts/tg.svg" alt="Телеграм" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <div data-fls-popup="popup_call" aria-hidden="true" class="popup">
+                <div data-fls-popup-wrapper="" class="popup__wrapper">
+                    <div data-fls-popup-body="" class="popup__body">
+                        <button data-fls-popup-close="" type="button" class="popup__close">
+                            <svg
+                                width="23"
+                                height="23"
+                                viewbox="0 0 23 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    opacity="0.850056"
+                                    d="M1.73333 1.48883L21.5469 21.0288"
+                                    stroke="#979797"
+                                    stroke-linecap="square"
+                                ></path>
+                                <path
+                                    opacity="0.850056"
+                                    d="M21.2667 1.48883L1.45309 21.0288"
+                                    stroke="#979797"
+                                    stroke-linecap="square"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div data-fls-popup-content="" class="popup__text">
+                            <div class="popup__booking">
+                                <h2 class="popup__title">Почніть свій шлях до ідеальної посмішки разом з нами.</h2>
+                                <h3 class="popup__subtitle">Заповніть форму</h3>
+                                <div class="popup__content">
+                                    <form action="sendmail.php" method="post" class="popup__form">
+                                        <div class="popup__item">
+                                            <input
+                                                type="text"
+                                                name="name"
+                                                required
+                                                placeholder="Ім‘я та прізвище"
+                                                class="popup__input"
+                                            />
+                                        </div>
+                                        <div class="popup__item">
+                                            <input
+                                                type="tel"
+                                                name="tel"
+                                                required
+                                                placeholder="Номер телефону"
+                                                min="10"
+                                                max="10"
+                                                class="popup__input"
+                                            />
+                                        </div>
+                                        <div class="popup__item">
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                required
+                                                placeholder="Email"
+                                                class="popup__input"
+                                            />
+                                        </div>
+                                        <div class="popup__item">
+                                            <button type="submit" class="popup__button">Записатись на прийом</button>
+                                        </div>
+                                    </form>
+                                    <div class="popup__img">
+                                        <picture>
+                                            <img alt="Стоматологи" src="./assets/img/popup/call/pop.webp" />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-fls-popup="popup_doc_1" aria-hidden="true" class="popup">
+                <div data-fls-popup-wrapper="" class="popup__wrapper">
+                    <div data-fls-popup-body="" class="popup__body pop_doc">
+                        <button data-fls-popup-close="" type="button" class="popup__close">
+                            <svg
+                                width="23"
+                                height="23"
+                                viewbox="0 0 23 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    opacity="0.850056"
+                                    d="M1.73333 1.48883L21.5469 21.0288"
+                                    stroke="#979797"
+                                    stroke-linecap="square"
+                                ></path>
+                                <path
+                                    opacity="0.850056"
+                                    d="M21.2667 1.48883L1.45309 21.0288"
+                                    stroke="#979797"
+                                    stroke-linecap="square"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div data-fls-popup-content="" class="popup__text">
+                            <div class="popup__doc doc-popup">
+                                <div class="doc-popup__img">
+                                    <picture>
+                                        <img alt="Володченко Тарас Андрійович" src="./assets/img/team/01.webp" />
+                                    </picture>
+                                    <div class="doc-popup__wrapper">
+                                        <a data-fls-popup-link="popup_call" href="#" class="doc-popup__btn"
+                                            >Записатись на консультацію</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="doc-popup__info">
+                                    <div class="doc-popup__name">Володченко Тарас Андрійович</div>
+                                    <div class="doc-popup__role">Лікар-стоматолог-хірург</div>
+                                    <div class="doc-popup__text">
+                                        Мене звати Володченко Тарас Андрійович, я лікар-стоматолог-хірург клініки
+                                        BELADENT. З 2020 року розпочав свою професійну діяльність у клініці BELADENT, де
+                                        спеціалізуюсь на хірургічній стоматології.
+                                    </div>
+                                    <div class="doc-popup__item">
+                                        <div class="doc-popup__label">
+                                            <img src="./assets/img/popup/doc/vector.svg" alt="Icon" />
+                                            Основні напрямки моєї роботи:
+                                        </div>
+                                        <ul class="doc-popup__vector">
+                                            <li>Видалення зубів будь-якої складності;</li>
+                                            <li>Проведення кісткової та м’якотканинної пластики;</li>
+                                            <li>Встановлення дентальних імплантатів.</li>
+                                        </ul>
+                                        <div class="doc-popup__desc">
+                                            Постійно вдосконалюю свої знання, проходжу курси підвищення кваліфікації та
+                                            освоюю сучасні методики лікування. Для мене важливо не лише технічно якісно
+                                            виконати роботу, а й забезпечити пацієнту психологічний комфорт. Мій підхід
+                                            — це відповідальність, точна діагностика, професіоналізм і впевненість у
+                                            результаті. Найбільше задоволення — бачити, як пацієнт виходить із кабінету
+                                            без страху, з відчуттям полегшення та посмішкою вдячності.
+                                        </div>
+                                    </div>
+                                    <div class="doc-popup__item">
+                                        <div class="doc-popup__label">
+                                            <img src="./assets/img/popup/doc/edu.svg" alt="Icon" />
+                                            Освіта:
+                                        </div>
+                                        <div class="doc-popup__desc">
+                                            Стоматологічну освіту здобув у Національному медичному університеті імені О.
+                                            О. Богомольця, який закінчив у 2020 році. Ще під час навчання проходив
+                                            практику у відділенні щелепно-лицевої хірургії КОКЛ, де здобув безцінний
+                                            клінічний досвід.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-fls-popup="popup_doc_2" aria-hidden="true" class="popup">
+                <div data-fls-popup-wrapper="" class="popup__wrapper">
+                    <div data-fls-popup-body="" class="popup__body pop_doc">
+                        <button data-fls-popup-close="" type="button" class="popup__close">
+                            <svg
+                                width="23"
+                                height="23"
+                                viewbox="0 0 23 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    opacity="0.850056"
+                                    d="M1.73333 1.48883L21.5469 21.0288"
+                                    stroke="#979797"
+                                    stroke-linecap="square"
+                                ></path>
+                                <path
+                                    opacity="0.850056"
+                                    d="M21.2667 1.48883L1.45309 21.0288"
+                                    stroke="#979797"
+                                    stroke-linecap="square"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div data-fls-popup-content="" class="popup__text">
+                            <div class="popup__doc doc-popup">
+                                <div class="doc-popup__img">
+                                    <picture>
+                                        <img alt="Іванюк Владислав Леонідович" src="./assets/img/team/02.webp" />
+                                    </picture>
+                                    <div class="doc-popup__wrapper">
+                                        <a data-fls-popup-link="popup_call" href="#" class="doc-popup__btn"
+                                            >Записатись на консультацію</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="doc-popup__info">
+                                    <div class="doc-popup__name">Іванюк Владислав Леонідович</div>
+                                    <div class="doc-popup__role">Лікар-хірург-імплантолог</div>
+                                    <div class="doc-popup__text">
+                                        Мене звати Іванюк Владислав Леонідович, я лікар-стоматолог-хірург клініки
+                                        BELADENT.
+                                    </div>
+                                    <div class="doc-popup__item">
+                                        <div class="doc-popup__label">
+                                            <img src="./assets/img/popup/doc/vector.svg" alt="Icon" />
+                                            Основні напрямки моєї роботи:
+                                        </div>
+                                        <div class="doc-popup__desc">
+                                            Мій основний напрям — імплантологія та хірургічна стоматологія. Я
+                                            переконаний: навіть найскладніші клінічні випадки можна вирішити максимально
+                                            комфортно для пацієнта, якщо поєднати сучасні технології, точність і
+                                            людяність.
+                                        </div>
+                                    </div>
+                                    <div class="doc-popup__item">
+                                        <div class="doc-popup__label">
+                                            <img src="./assets/img/popup/doc/edu.svg" alt="Icon" />
+                                            Освіта:
+                                        </div>
+                                        <div class="doc-popup__desc">
+                                            Стоматологічну освіту здобув у Вінницькому національному медичному
+                                            університеті імені М. І. Пирогова, який закінчив у 2014 році. Ще з перших
+                                            курсів мене захопила хірургічна стоматологія — точна, відповідальна та
+                                            водночас надзвичайно важлива галузь, яка змінює життя пацієнтів.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-fls-popup="popup_doc_3" aria-hidden="true" class="popup">
+                <div data-fls-popup-wrapper="" class="popup__wrapper">
+                    <div data-fls-popup-body="" class="popup__body pop_doc">
+                        <button data-fls-popup-close="" type="button" class="popup__close">
+                            <svg
+                                width="23"
+                                height="23"
+                                viewbox="0 0 23 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    opacity="0.850056"
+                                    d="M1.73333 1.48883L21.5469 21.0288"
+                                    stroke="#979797"
+                                    stroke-linecap="square"
+                                ></path>
+                                <path
+                                    opacity="0.850056"
+                                    d="M21.2667 1.48883L1.45309 21.0288"
+                                    stroke="#979797"
+                                    stroke-linecap="square"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div data-fls-popup-content="" class="popup__text">
+                            <div class="popup__doc doc-popup">
+                                <div class="doc-popup__img">
+                                    <picture>
+                                        <img alt="Поліщук Олександр Олександрович" src="./assets/img/team/03.webp" />
+                                    </picture>
+                                    <div class="doc-popup__wrapper">
+                                        <a data-fls-popup-link="popup_call" href="#" class="doc-popup__btn"
+                                            >Записатись на консультацію</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="doc-popup__info">
+                                    <div class="doc-popup__name">Поліщук Олександр Олександрович</div>
+                                    <div class="doc-popup__role">Лікар-стоматолог-ортопед</div>
+                                    <div class="doc-popup__text">
+                                        Мене звати Поліщук Олександр Олександрович, я лікар-стоматолог ортопед клініки
+                                        BELADENT. Мій фокус — це функціональна та естетична реабілітація пацієнтів: від
+                                        тотальних реконструкцій до відновлення окремих зубів, як на імплантах, так і на
+                                        власних зубах пацієнта. Вже понад 9 років я є частиною команди BELADENT, і моя
+                                        робота — це не просто лікування. Це повернення людям краси, гармонії та
+                                        впевненості у собі.
+                                    </div>
+                                    <div class="doc-popup__item">
+                                        <div class="doc-popup__label">
+                                            <img src="./assets/img/popup/doc/vector.svg" alt="Icon" />
+                                            Основні напрямки моєї роботи:
+                                        </div>
+                                        <ul class="doc-popup__vector">
+                                            <li>Протезування на імплантах</li>
+                                            <li>Тотальні реабілітації</li>
+                                            <li>Виготовлення коронок та вінірів</li>
+                                            <li>Відновлення анатомії та функції зубощелепної системи</li>
+                                        </ul>
+                                        <div class="doc-popup__desc">
+                                            Я щиро вірю, що якісна ортопедична стоматологія — це про турботу, довіру та
+                                            результати, які змінюють життя.
+                                        </div>
+                                    </div>
+                                    <div class="doc-popup__item">
+                                        <div class="doc-popup__label">
+                                            <img src="./assets/img/popup/doc/edu.svg" alt="Icon" />
+                                            Освіта:
+                                        </div>
+                                        <div class="doc-popup__desc">
+                                            Стоматологічну освіту здобув у Національному медичному університеті імені
+                                            О.О. Богомольця, який закінчив у 2008 році. Протягом 17 років я постійно
+                                            вдосконалюю свої знання та навички, проходячи численні курси підвищення
+                                            кваліфікації — як в Україні, так і за її межами.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-fls-popup="popup_doc_4" aria-hidden="true" class="popup">
+                <div data-fls-popup-wrapper="" class="popup__wrapper">
+                    <div data-fls-popup-body="" class="popup__body pop_doc">
+                        <button data-fls-popup-close="" type="button" class="popup__close">
+                            <svg
+                                width="23"
+                                height="23"
+                                viewbox="0 0 23 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    opacity="0.850056"
+                                    d="M1.73333 1.48883L21.5469 21.0288"
+                                    stroke="#979797"
+                                    stroke-linecap="square"
+                                ></path>
+                                <path
+                                    opacity="0.850056"
+                                    d="M21.2667 1.48883L1.45309 21.0288"
+                                    stroke="#979797"
+                                    stroke-linecap="square"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div data-fls-popup-content="" class="popup__text">
+                            <div class="popup__doc doc-popup">
+                                <div class="doc-popup__img">
+                                    <picture>
+                                        <img alt="Прохорчук Вадим Леонідович" src="./assets/img/team/04.webp" />
+                                    </picture>
+                                    <div class="doc-popup__wrapper">
+                                        <a data-fls-popup-link="popup_call" href="#" class="doc-popup__btn"
+                                            >Записатись на консультацію</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="doc-popup__info">
+                                    <div class="doc-popup__name">Прохорчук Вадим Леонідович</div>
+                                    <div class="doc-popup__role">Лікар-ортопед, стаж 18 років</div>
+                                    <div class="doc-popup__text">
+                                        Мене звати Прохорчук Вадим Леонідович, я лікар-стоматолог-ортопед клініки
+                                        BELADENT. До команди BELADENT я приєднався у 2006 році, і з того часу пройшов
+                                        шлях довжиною понад 20 років клінічного досвіду.
+                                    </div>
+                                    <div class="doc-popup__item">
+                                        <div class="doc-popup__label">
+                                            <img src="./assets/img/popup/doc/vector.svg" alt="Icon" />
+                                            Основні напрямки моєї роботи:
+                                        </div>
+                                        <div class="doc-popup__desc">
+                                            Мій основний напрямок — ортопедична стоматологія, де кожна робота для мене —
+                                            це виклик, а кожна усмішка пацієнта — головна нагорода. Я часто беруся за
+                                            складні клінічні випадки, завершуючи лікування, розпочате іншими
+                                            спеціалістами. Моє завдання — не просто «поставити коронку чи протез», а
+                                            повернути людині впевненість, гармонію та бажання усміхатись на всі 100%. Я
+                                            переконаний, що найкращий результат — це поєднання знань, досвіду, точності
+                                            та щирого бажання допомогти.
+                                        </div>
+                                    </div>
+                                    <div class="doc-popup__item">
+                                        <div class="doc-popup__label">
+                                            <img src="./assets/img/popup/doc/edu.svg" alt="Icon" />
+                                            Освіта:
+                                        </div>
+                                        <div class="doc-popup__desc">
+                                            Свою медичну практику я розпочав у 1999 році після закінчення Київського
+                                            медичного училища №4 за спеціальністю «ортопедична стоматологія»,
+                                            кваліфікація — зубний технік. Це дало мені глибоке розуміння технічної
+                                            сторони відновлення зубів. Згодом я здобув повну вищу освіту в Національному
+                                            медичному університеті імені О. О. Богомольця, який закінчив у 2004 році, та
+                                            вже у 2005 році підтвердив свою спеціалізацію як лікар-стоматолог-ортопед.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-fls-popup="popup_doc_5" aria-hidden="true" class="popup">
+                <div data-fls-popup-wrapper="" class="popup__wrapper">
+                    <div data-fls-popup-body="" class="popup__body pop_doc">
+                        <button data-fls-popup-close="" type="button" class="popup__close">
+                            <svg
+                                width="23"
+                                height="23"
+                                viewbox="0 0 23 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    opacity="0.850056"
+                                    d="M1.73333 1.48883L21.5469 21.0288"
+                                    stroke="#979797"
+                                    stroke-linecap="square"
+                                ></path>
+                                <path
+                                    opacity="0.850056"
+                                    d="M21.2667 1.48883L1.45309 21.0288"
+                                    stroke="#979797"
+                                    stroke-linecap="square"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div data-fls-popup-content="" class="popup__text">
+                            <div class="popup__doc doc-popup">
+                                <div class="doc-popup__img">
+                                    <picture>
+                                        <img alt="Володченко Тарас Андрійович" src="./assets/img/team/01.webp" />
+                                    </picture>
+                                    <div class="doc-popup__wrapper">
+                                        <a data-fls-popup-link="popup_call" href="#" class="doc-popup__btn"
+                                            >Записатись на консультацію</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="doc-popup__info">
+                                    <div class="doc-popup__name">Грега Вадим Валерійович</div>
+                                    <div class="doc-popup__role">Лікар-стоматолог-ортопед</div>
+                                    <div class="doc-popup__text">
+                                        Мене звати Грега Вадим Валерійович, я стоматолог-ортопед із понад 10-річним
+                                        досвідом роботи. З 2013 року я є частиною команди клініки BELADENT, де допомагаю
+                                        пацієнтам повернути функціональність, естетику та впевненість у своїй усмішці.
+                                    </div>
+                                    <div class="doc-popup__item">
+                                        <div class="doc-popup__label">
+                                            <img src="./assets/img/popup/doc/vector.svg" alt="Icon" />
+                                            Основні напрямки моєї роботи:
+                                        </div>
+                                        <ul class="doc-popup__vector">
+                                            <li>незнімне та знімне протезування;</li>
+                                            <li>естетична реконструкція зубного ряду;</li>
+                                            <li>
+                                                комплексне відновлення втрачених зубів з урахуванням індивідуальних
+                                                особливостей пацієнта.
+                                            </li>
+                                        </ul>
+                                        <div class="doc-popup__desc">
+                                            Я глибоко переконаний, що стоматологія — це не лише про зуби, а й про якість
+                                            життя. Тому завжди прагну створити для пацієнта максимально комфортний та
+                                            прогнозований шлях лікування — від першої консультації до фінального
+                                            результату. У своїй роботі найбільше ціную можливість повернути людині не
+                                            лише втрачені зуби, а й щиру усмішку та впевненість у собі.
+                                        </div>
+                                    </div>
+                                    <div class="doc-popup__item">
+                                        <div class="doc-popup__label">
+                                            <img src="./assets/img/popup/doc/edu.svg" alt="Icon" />
+                                            Освіта:
+                                        </div>
+                                        <div class="doc-popup__desc">
+                                            Стоматологічну освіту здобув у Національному медичному університеті імені О.
+                                            О. Богомольця, який закінчив у 2011 році. Протягом своєї практики постійно
+                                            вдосконалюю професійні навички, проходячи численні курси підвищення
+                                            кваліфікації — зокрема в галузі цифрових протоколів, тотальних оклюзійних
+                                            реабілітацій, а також керамічних реставрацій фронтальних і бічних зубів: від
+                                            планування до фіксації.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-fls-popup="popup_thx" aria-hidden="true" class="popup">
+                <div data-fls-popup-wrapper="" class="popup__wrapper">
+                    <div data-fls-popup-body="" class="popup__body">
+                        <button data-fls-popup-close="" type="button" class="popup__close">
+                            <svg
+                                width="23"
+                                height="23"
+                                viewbox="0 0 23 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    opacity="0.850056"
+                                    d="M1.73333 1.48883L21.5469 21.0288"
+                                    stroke="#979797"
+                                    stroke-linecap="square"
+                                ></path>
+                                <path
+                                    opacity="0.850056"
+                                    d="M21.2667 1.48883L1.45309 21.0288"
+                                    stroke="#979797"
+                                    stroke-linecap="square"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div data-fls-popup-content="" class="popup__text">
+                            <div class="popup__booking">
+                                <div class="popup__content">
+                                    <div class="popup__thx">
+                                        <h2 class="popup__title">Дякуємо за довіру!</h2>
+                                        <div class="popup__label">Ми зв'яжемось з Вами найближчим часом!</div>
+                                    </div>
+                                    <div class="popup__img">
+                                        <picture>
+                                            <img alt="Стоматологи" src="./assets/img/popup/call/pop.webp" />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer data-fls-footer="" class="footer">
+                <div class="footer__container">
+                    <a href="#" class="footer__logo">
+                        <img src="./assets/img/logo.svg" alt="Беладент" />
+                    </a>
+                    <div class="footer__menu">
+                        <a href="#" data-fls-scrollto=".services" class="footer__link">Послуги</a>
+                        <a href="#" data-fls-scrollto=".ba" class="footer__link">Результати роботи</a>
+                        <a href="#" data-fls-scrollto=".team" class="footer__link">Команда</a>
+                        <a href="#" data-fls-scrollto=".reviews" class="footer__link">Відгуки</a>
+                        <a href="#" data-fls-scrollto=".contacts" class="footer__link">Контакт</a>
+                    </div>
+                    <div class="footer__nav">
+                        <a href="#" class="footer__btn">Замовити дзвінок</a>
+                        <a data-fls-scrollto=".hero" href="#" class="footer__top">
+                            <img src="./assets/img/footer/arr.svg" alt="Вверх" />
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
