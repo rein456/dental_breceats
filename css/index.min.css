@@ -3900,6 +3900,18 @@ body:after {
     align-items: start;
 }
 
+@media (max-width: 991px) {
+    .hero-main__wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-main__promo-cost {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .hero-main__bonus {
     display: flex;
     align-items: center;
